@@ -1,4 +1,5 @@
 function gerarSequencia() {
+  
   let sequencias = [
     [
       2, 4, 6, 7, 8, 10,
