@@ -1,9 +1,19 @@
-const fetch = require('node-fetch')
+// const fetch = require('node-fetch')
+// const response = require('node-fetch').response
 
 module.exports = {
-  gamesFetch: async () => {
-    const response = await fetch('http://localhost:3000/game/10');
-    const data = response.json();
-    return data
+  gamesFetch: () => {
+    const result = fetch('http://localhost:3000/game/2')
+    .then((res) => res.json())
+    .then((res) => res)
+
+    return result
   }
 }
+// }module.exports = {
+//   gamesFetch: async () => {
+//     const response = await fetch('http://localhost:3000/game/2');
+//     const data = response;
+//     return data
+//   }
+// }
